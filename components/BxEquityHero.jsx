@@ -51,7 +51,7 @@ export default function BxEquityHero() {
             style={{
               fontFamily: "var(--font-produkt), Arial, sans-serif",
               fontWeight: 400,
-	      fontSize: 32px,
+	      fontSize: 32,
               lineHeight: "120%",
               letterSpacing: "0",
             }}
