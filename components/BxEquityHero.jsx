@@ -4,9 +4,9 @@ import React from "react";
  * BX Equity — Hero Section
  * Recriado a partir do SVG fornecido (BX_Equity.svg)
  *
- * Fontes usadas: Playfair Display (serif, wordmark/título/parágrafo)
- * e Inter (badge "Coming Soon"), carregadas via next/font em app/layout.js
- * e expostas como as CSS variables --font-playfair e --font-inter.
+ * Fonte usada no titulo, descricao e badge: Produkt Regular,
+ * carregada via next/font/local em app/layout.js e exposta como
+ * a CSS variable --font-produkt.
  */
 
 function BxEquityLogo({ className }) {
@@ -48,7 +48,12 @@ export default function BxEquityHero() {
         <div className="mt-8 flex flex-col items-center gap-4">
           <h2
             className="text-[40px] font-normal text-white text-center"
-            style={{ fontFamily: "'Produkt', var(--font-playfair), serif", lineHeight: "120%", letterSpacing: "0%" }}
+            style={{
+              fontFamily: "var(--font-produkt), Arial, sans-serif",
+              fontWeight: 400,
+              lineHeight: "120%",
+              letterSpacing: "0",
+            }}
           >
             Forward Thinking Investments
           </h2>
@@ -56,11 +61,11 @@ export default function BxEquityHero() {
           <p
             className="max-w-xl text-base text-center"
             style={{
-              fontFamily: "'Produkt', var(--font-playfair), serif",
+              fontFamily: "var(--font-produkt), Arial, sans-serif",
               fontSize: "16px",
               fontWeight: 400,
               lineHeight: "150%",
-              letterSpacing: "0%",
+              letterSpacing: "0",
               color: "rgba(255,255,255,0.72)",
             }}
           >
@@ -76,7 +81,7 @@ export default function BxEquityHero() {
           <span className="h-2 w-2 bg-white" />
           <span
             className="text-xs font-medium uppercase tracking-[0.15em] text-white"
-            style={{ fontFamily: "var(--font-inter), sans-serif" }}
+            style={{ fontFamily: "var(--font-produkt), Arial, sans-serif" }}
           >
             Coming Soon
           </span>

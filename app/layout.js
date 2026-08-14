@@ -1,17 +1,11 @@
-import { Playfair_Display, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-playfair",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["500", "600"],
-  variable: "--font-inter",
+const produkt = localFont({
+  src: "./fonts/produkt-regular.woff2",
+  variable: "--font-produkt",
+  weight: "400",
+  style: "normal",
   display: "swap",
 });
 
@@ -24,9 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={`${playfair.variable} ${inter.variable}`}>
-        {children}
-      </body>
+      <body className={produkt.variable}>{children}</body>
     </html>
   );
 }
