@@ -79,12 +79,15 @@ export default function BxEquityHero() {
 
         {/* Badge */}
         <div className="mt-10 flex items-center gap-2">
-          <span className="h-2 w-2 bg-white" />
+          <span className="h-2 w-2 bg-[#00AA77]" />
           <span
-            className="text-xs font-medium uppercase tracking-[0.15em] text-white"
-            style={{ fontFamily: "var(--font-produkt), Arial, sans-serif" }}
+            className="text-xs font-medium text-white"
+            style={{
+              fontFamily: "var(--font-produkt), Arial, sans-serif",
+              fontSize: "16px",
+            }}
           >
-            Coming Soon
+            Coming soon
           </span>
         </div>
       </div>
