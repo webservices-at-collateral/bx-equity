@@ -1,9 +1,9 @@
-import BxEquityHero from "../components/BxEquityHero";
+import BxEquityHeroV3 from "../components/BxEquityHeroV3";
 
 export default function Home() {
   return (
     <main>
-      <BxEquityHero />
+      <BxEquityHeroV3 />
     </main>
   );
 }

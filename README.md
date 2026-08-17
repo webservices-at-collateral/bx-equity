@@ -1,6 +1,8 @@
-# BX Equity — Landing Page
+# BX Equity v3 — Landing Page
 
-Projeto Next.js (App Router) + Tailwind CSS com a hero section "BX Equity".
+Projeto Next.js (App Router) + Tailwind CSS com a hero section "BX Equity" v3
+(layout alinhado à esquerda, com foto de prédio em recorte de seta),
+implementada a partir do Figma (node 74:77).
 
 ## Rodar localmente
 
@@ -16,31 +18,26 @@ Abra http://localhost:3000
 ### Opção 1 — Vercel CLI
 ```bash
 npm install -g vercel
-vercel
-```
-Siga o passo a passo (login, nome do projeto, etc). No final ele te dá a URL de produção.
-
-Para produção direto:
-```bash
 vercel --prod
 ```
 
-### Opção 2 — Painel da Vercel (recomendado se for a 1ª vez)
-1. Suba esta pasta para um repositório no GitHub (ou GitLab/Bitbucket).
+### Opção 2 — Painel da Vercel
+1. Suba esta pasta para um repositório no GitHub.
 2. Acesse https://vercel.com/new
 3. Selecione o repositório.
 4. Framework Preset: **Next.js** (detectado automaticamente).
 5. Clique em **Deploy**.
 
-Nenhuma variável de ambiente é necessária — o projeto é 100% estático/front-end.
-
 ## Estrutura
 
 ```
 app/
-  layout.js       # fontes (Playfair Display + Inter) via next/font
-  page.js         # renderiza a hero section
-  globals.css     # Tailwind base
+  layout.js             # fonte Produkt local via next/font
+  page.js               # renderiza a hero section
+  globals.css           # Tailwind base
 components/
-  BxEquityHero.jsx  # a section em si (logo SVG + textos + badge)
+  BxEquityHeroV3.jsx    # a section em si (lockup SVG + parágrafo + badge)
+public/
+  fonts/produkt-regular.woff2
+  images/hero-building.png   # imagem de fundo (gradiente + linhas + foto já compostos)
 ```

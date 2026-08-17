@@ -1,108 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>BX Equity — Forward Thinking, Investments</title>
-<meta name="description" content="A real estate platform that buys undervalued and transitional assets, then manages them on-site rather than handing them off." />
+import React from "react";
 
-<style>
-  @font-face {
-    font-family: 'Produkt';
-    src: url('./fonts/produkt-regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+/**
+ * BX Equity v3 — Hero Section
+ * Implementado a partir do Figma (node 74:77 — "BX Equity" v3)
+ * https://www.figma.com/design/Nsf5sTZVQZUnpNVyxlHeeb/BX-Capital--Website-Covers?node-id=74-77
+ *
+ * Layout alinhado à esquerda, com foto de prédio (recorte em seta) como
+ * background full-bleed. O logo já vem composto no Figma com o wordmark
+ * "Bx Equity" + o subtítulo "Forward Thinking > Investments" num único SVG.
+ *
+ * Fonte: Produkt (parágrafo e badge), carregada via next/font em
+ * app/layout.js e exposta como a CSS variable --font-produkt.
+ */
 
-  * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .hero {
-    position: relative;
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    overflow: hidden;
-    padding: 96px 24px;
-    background: linear-gradient(90deg, #002117 0%, #125E47 100%);
-  }
-
-  @media (min-width: 640px) {
-    .hero {
-      padding: 96px 64px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .hero {
-      padding: 96px 112px;
-    }
-  }
-
-  .hero__bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    object-position: right;
-    pointer-events: none;
-  }
-
-  .hero__content {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    width: 100%;
-    max-width: 524px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px;
-    text-align: left;
-  }
-
-  .hero__lockup {
-    height: 72px;
-    width: auto;
-  }
-
-  @media (min-width: 640px) {
-    .hero__lockup {
-      height: 96px;
-    }
-  }
-
-  .hero__paragraph {
-    max-width: 524px;
-    font-family: 'Produkt', serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.72);
-    text-align: left;
-    margin: 0;
-  }
-</style>
-</head>
-<body>
-
-<section class="hero">
-  <img class="hero__bg" src="./images/hero-building.png" alt="" aria-hidden="true" />
-
-  <div class="hero__content">
-
-    <!-- Lockup: logo "Bx Equity" + "Forward Thinking > Investments" (SVG real, composto no Figma) -->
-    <svg class="hero__lockup" viewBox="0 0 299 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bx Equity — Forward Thinking, Investments">
+function BxEquityLockup({ className }) {
+  return (
+    <svg
+      viewBox="0 0 299 96"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      role="img"
+      aria-label="Bx Equity — Forward Thinking, Investments"
+    >
       <g id="Vector">
 <path d="M74.8415 46.1278H80.2951V9.40917H74.8415V2.47603H113.518V15.6348H105.726V9.40899H89.7163V23.7709H101.404V20.3048H108.205V34.3123H101.404V30.9164H89.7163V46.1278H106.86V39.0526H114.865V53.0617H74.8415V46.1278Z" fill="white"/>
 <path d="M143.478 65.9381V59.6404H148.508V46.9763C146.453 50.5134 141.778 53.769 136.323 53.769C126.973 53.769 119.961 47.2598 119.961 35.1617V34.5958C119.961 22.7103 126.973 15.2813 136.677 15.2813C142.698 15.2813 146.312 18.041 148.508 21.7194V16.0595H161.612V22.5687H157.079V59.6402H161.472V65.9379L143.478 65.9381ZM148.791 34.8082V34.2423C148.791 25.9649 145.036 22.003 138.804 22.003C132.357 22.003 128.815 26.3887 128.815 34.3835V34.9494C128.815 43.0855 132.852 46.9763 138.45 46.9763C144.4 46.9763 148.791 43.0145 148.791 34.8082Z" fill="white"/>
@@ -143,14 +63,44 @@
 </g>
 
     </svg>
+  );
+}
 
-    <!-- Paragraph -->
-    <p class="hero__paragraph">
-      A direct investment platform putting growth equity into consumer, technology, and operating businesses. Deals come through the family's operating network and counterparty relationships built over years, and that same network feeds BX Capital and BX Realty.
-    </p>
+export default function BxEquityHeroV3() {
+  return (
+    <section
+      className="relative flex h-screen w-full items-center overflow-hidden px-6 py-24 sm:px-16 lg:px-28"
+      style={{ background: "linear-gradient(90deg, #002117 0%, #125E47 100%)" }}
+    >
+      {/* Foto do prédio (recorte em seta), à direita, encostando topo/rodapé, escala preservada */}
+      <img
+        src="/images/hero-building.png"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute right-0 top-0 h-full w-auto object-contain object-right"
+      />
 
-  </div>
-</section>
+      <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-12 text-left">
+        {/* Lockup: logo + "Forward Thinking > Investments" */}
+        <BxEquityLockup className="h-[72px] w-auto sm:h-[96px]" />
 
-</body>
-</html>
+        {/* Paragraph */}
+        <p
+          className="max-w-[524px] text-left"
+          style={{
+            fontFamily: "var(--font-produkt), serif",
+            fontSize: "16px",
+            fontWeight: 400,
+            lineHeight: "1.4",
+            color: "rgba(255,255,255,0.72)",
+          }}
+        >
+          A direct investment platform putting growth equity into consumer,
+          technology, and operating businesses. Deals come through the
+          family's operating network and counterparty relationships built
+          over years, and that same network feeds BX Capital and BX Realty.
+        </p>
+      </div>
+    </section>
+  );
+}
