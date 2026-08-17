@@ -70,7 +70,7 @@ export default function BxEquityHero() {
               color: "rgba(255,255,255,0.72)",
             }}
           >
-            A direct investment platform putting growth equity into consumer, technology, and operating businesses. Deals come through the family's operating network and counterparty relationships built over years, and that same network feeds BX Capital and BX Realty
+            A direct investment platform putting growth equity into consumer, technology, and operating businesses. Deals come through the family's operating network and counterparty relationships built over years, and that same network feeds BX Capital and BX Realty.
           </p>
         </div>
 
