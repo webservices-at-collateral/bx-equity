@@ -12,7 +12,7 @@ const produkt = localFont({
 export const metadata = {
   title: "BX Equity — Forward Thinking Investments",
   description:
-    "A real estate platform that buys undervalued and transitional assets, then manages them on-site rather than handing them off.",
+    "A direct investment platform putting growth equity into consumer, technology, and operating businesses. Deals come through the family's operating network and counterparty relationships built over years, and that same network feeds BX Capital and BX Realty.",
 };
 
 export default function RootLayout({ children }) {
