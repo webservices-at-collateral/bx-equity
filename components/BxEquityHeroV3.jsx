@@ -91,9 +91,11 @@ export default function BxEquityHeroV3() {
         }}
       />
 
-      <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-12 text-left">
+      <div
+        className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-8 rounded-[20px] border border-white/[0.06] bg-[rgba(0,17,12,0.55)] p-6 text-left shadow-[0_1px_2px_rgba(0,0,0,0.20),0_8px_16px_-4px_rgba(0,0,0,0.35),0_24px_48px_-12px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-md sm:gap-10 sm:p-8 lg:gap-12 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-none"
+      >
         {/* Lockup: logo + "Forward Thinking > Investments" */}
-        <BxEquityLockup className="h-[72px] w-auto max-w-full sm:h-[96px]" />
+        <BxEquityLockup className="h-[64px] w-auto max-w-full sm:h-[80px] lg:h-[96px]" />
 
         {/* Paragraph */}
         <p
