@@ -91,7 +91,7 @@ export default function BxEquityHeroV3() {
         className="absolute inset-0 z-[5] lg:hidden"
         style={{
           background:
-            "linear-gradient(90deg, rgba(0,33,23,0.7) 0%, rgba(0,33,23,0.4) 28%, rgba(0,33,23,0.1) 45%, rgba(0,33,23,0) 58%)",
+            "linear-gradient(90deg, rgba(0,33,23,0.8) 0%, rgba(0,33,23,0.6) 35%, rgba(0,33,23,0.3) 65%, rgba(0,33,23,0) 100%)",
           pointerEvents: "none",
         }}
       />
