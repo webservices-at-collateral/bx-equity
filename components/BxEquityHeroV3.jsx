@@ -72,12 +72,17 @@ export default function BxEquityHeroV3() {
       className="relative flex h-screen w-full items-center overflow-hidden px-6 py-24 sm:px-16 lg:px-28"
       style={{ background: "linear-gradient(90deg, #002117 0%, #125E47 100%)" }}
     >
-      {/* Foto do prédio (recorte em seta), à direita, encostando topo/rodapé, escala preservada */}
+      {/* Foto do prédio (recorte em seta), centralizada, encostando topo/rodapé, escala preservada,
+          com sombra fluida acompanhando o recorte real do PNG (drop-shadow, não box-shadow) */}
       <img
         src="/images/hero-building.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-0 h-full w-auto object-contain object-right"
+        className="pointer-events-none absolute inset-y-0 left-1/2 h-full w-auto -translate-x-1/2 object-contain"
+        style={{
+          filter:
+            "drop-shadow(0 40px 80px rgba(0,0,0,0.45)) drop-shadow(0 12px 28px rgba(0,0,0,0.35))",
+        }}
       />
 
       {/* Scrim para legibilidade do texto sobre a imagem em tablet/phone */}
@@ -91,9 +96,7 @@ export default function BxEquityHeroV3() {
         }}
       />
 
-      <div
-        className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-8 rounded-[20px] border border-white/[0.06] bg-[rgba(0,17,12,0.55)] p-6 text-left shadow-[0_1px_2px_rgba(0,0,0,0.20),0_8px_16px_-4px_rgba(0,0,0,0.35),0_24px_48px_-12px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-md sm:gap-10 sm:p-8 lg:gap-12 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-none"
-      >
+      <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-8 text-left sm:gap-10 lg:gap-12">
         {/* Lockup: logo + "Forward Thinking > Investments" */}
         <BxEquityLockup className="h-[64px] w-auto max-w-full sm:h-[80px] lg:h-[96px]" />
 
