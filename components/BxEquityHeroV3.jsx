@@ -80,16 +80,27 @@ export default function BxEquityHeroV3() {
         className="pointer-events-none absolute right-0 top-0 h-full w-auto object-contain object-right"
       />
 
+      {/* Scrim para legibilidade do texto sobre a imagem em tablet/phone */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 z-[5] lg:hidden"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(0,33,23,0.7) 0%, rgba(0,33,23,0.4) 28%, rgba(0,33,23,0.1) 45%, rgba(0,33,23,0) 58%)",
+          pointerEvents: "none",
+        }}
+      />
+
       <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-12 text-left">
         {/* Lockup: logo + "Forward Thinking > Investments" */}
-        <BxEquityLockup className="h-[72px] w-auto sm:h-[96px]" />
+        <BxEquityLockup className="h-[72px] w-auto max-w-full sm:h-[96px]" />
 
         {/* Paragraph */}
         <p
           className="max-w-[524px] text-left"
           style={{
             fontFamily: "var(--font-produkt), serif",
-            fontSize: "20px",
+            fontSize: "16px",
             fontWeight: 400,
             lineHeight: "1.4",
             color: "rgba(255,255,255,0.72)",

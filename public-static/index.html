@@ -58,6 +58,21 @@
     pointer-events: none;
   }
 
+  .hero__scrim {
+    display: none;
+  }
+
+  @media (max-width: 1023px) {
+    .hero__scrim {
+      display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      background: linear-gradient(90deg, rgba(0,33,23,0.7) 0%, rgba(0,33,23,0.4) 28%, rgba(0,33,23,0.1) 45%, rgba(0,33,23,0) 58%);
+      pointer-events: none;
+    }
+  }
+
   .hero__content {
     position: relative;
     z-index: 10;
@@ -73,6 +88,7 @@
   .hero__lockup {
     height: 72px;
     width: auto;
+    max-width: 100%;
   }
 
   @media (min-width: 640px) {
@@ -98,6 +114,7 @@
 
 <section class="hero">
   <img class="hero__bg" src="./images/hero-building.png" alt="" aria-hidden="true" />
+  <div class="hero__scrim" aria-hidden="true"></div>
 
   <div class="hero__content">
 
