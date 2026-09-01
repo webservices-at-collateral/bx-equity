@@ -78,7 +78,7 @@ export default function BxEquityHeroV3() {
         src="/images/hero-building.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-y-0 left-1/2 h-full w-auto -translate-x-1/2 object-contain"
+        className="pointer-events-none absolute inset-y-0 left-1/2 h-full w-auto max-w-none -translate-x-1/2 object-contain"
         style={{
           filter:
             "drop-shadow(0 40px 80px rgba(0,0,0,0.45)) drop-shadow(0 12px 28px rgba(0,0,0,0.35))",
