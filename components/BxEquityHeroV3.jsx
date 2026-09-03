@@ -111,10 +111,16 @@ export default function BxEquityHeroV3() {
             color: "rgba(255,255,255,0.72)",
           }}
         >
-          A direct investment platform putting growth equity into consumer,
-          technology, and operating businesses. Deals come through the
-          family's operating network and counterparty relationships built
-          over years, and that same network feeds BX Capital and BX Realty.
+          BX Equity is the private equity and venture capital arm of BX
+          Group, deploying capital into early- and growth-stage companies
+          across prop tech, fintech, intellectual property, and traditional
+          private equity sectors—areas where the firm brings strategic
+          insight. With a disciplined investment approach, BX Equity seeks
+          high-growth opportunities with strong fundamentals, scalable
+          business models, and experienced, resilient founders. Beyond
+          capital, the firm provides strategic and operational support,
+          partnering with businesses to accelerate growth and unlock
+          long-term value.
         </p>
       </div>
     </section>
