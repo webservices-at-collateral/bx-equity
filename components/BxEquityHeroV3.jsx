@@ -96,13 +96,13 @@ export default function BxEquityHeroV3() {
         }}
       />
 
-      <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-8 text-left sm:gap-10 lg:gap-12">
+      <div className="relative z-10 flex w-full max-w-[680px] flex-col items-start gap-8 text-left sm:gap-10 lg:gap-12">
         {/* Lockup: logo + "Forward Thinking > Investments" */}
         <BxEquityLockup className="h-[64px] w-auto max-w-full sm:h-[80px] lg:h-[96px]" />
 
         {/* Paragraph */}
         <p
-          className="max-w-[524px] text-left"
+          className="max-w-[680px] text-left"
           style={{
             fontFamily: "var(--font-produkt), serif",
             fontSize: "16px",
