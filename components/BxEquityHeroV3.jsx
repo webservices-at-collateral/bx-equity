@@ -69,7 +69,7 @@ function BxEquityLockup({ className }) {
 export default function BxEquityHeroV3() {
   return (
     <section
-      className="relative flex h-screen w-full items-start overflow-hidden px-6 pt-[4vh] sm:px-16 sm:pt-[18vh] lg:px-28 lg:pt-[25vh]"
+      className="relative flex h-screen w-full items-start overflow-hidden px-6 pt-[1vh] sm:px-16 sm:pt-[18vh] lg:px-28 lg:pt-[25vh]"
       style={{ background: "linear-gradient(90deg, #002117 0%, #125E47 100%)" }}
     >
       {/* Foto do prédio (recorte em seta), centralizada, encostando topo/rodapé, escala preservada,
@@ -105,10 +105,11 @@ export default function BxEquityHeroV3() {
           className="max-w-[680px] text-left"
           style={{
             fontFamily: "var(--font-produkt), serif",
-            fontSize: "16px",
+            fontSize: "20px",
             fontWeight: 400,
-            lineHeight: "1.4",
-            color: "rgba(255,255,255,0.72)",
+            lineHeight: "28px",
+            letterSpacing: "normal",
+            color: "#B8B8B8",
           }}
         >
           BX Equity is the private equity and venture capital arm of BX
