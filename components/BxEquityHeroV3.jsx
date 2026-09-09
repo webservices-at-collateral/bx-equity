@@ -69,7 +69,7 @@ function BxEquityLockup({ className }) {
 export default function BxEquityHeroV3() {
   return (
     <section
-      className="relative flex h-screen w-full items-center overflow-hidden px-6 py-24 sm:px-16 lg:px-28"
+      className="relative flex h-screen w-full items-start overflow-hidden px-6 pt-[4vh] sm:px-16 sm:pt-[18vh] lg:px-28 lg:pt-[25vh]"
       style={{ background: "linear-gradient(90deg, #002117 0%, #125E47 100%)" }}
     >
       {/* Foto do prédio (recorte em seta), centralizada, encostando topo/rodapé, escala preservada,
