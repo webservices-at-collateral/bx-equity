@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="./images/favicon.png" />
 <title>BX Equity — Forward Thinking, Investments</title>
 <meta name="description" content="A real estate platform that buys undervalued and transitional assets, then manages them on-site rather than handing them off." />
 
@@ -29,33 +30,34 @@
     display: flex;
     height: 100vh;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
-    padding: 96px 24px;
+    padding: 1vh 24px 0;
     background: linear-gradient(90deg, #002117 0%, #125E47 100%);
   }
 
   @media (min-width: 640px) {
     .hero {
-      padding: 96px 64px;
+      padding: 18vh 64px 0;
     }
   }
 
   @media (min-width: 1024px) {
     .hero {
-      padding: 96px 112px;
+      padding: 25vh 112px 0;
     }
   }
 
   .hero__bg {
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
     height: 100%;
     width: auto;
     object-fit: contain;
-    object-position: right;
     pointer-events: none;
+    filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.45))
+      drop-shadow(0 12px 28px rgba(0, 0, 0, 0.35));
   }
 
   .hero__scrim {
@@ -68,7 +70,7 @@
       position: absolute;
       inset: 0;
       z-index: 5;
-      background: linear-gradient(90deg, rgba(0,33,23,0.7) 0%, rgba(0,33,23,0.4) 28%, rgba(0,33,23,0.1) 45%, rgba(0,33,23,0) 58%);
+      background: linear-gradient(90deg, rgba(0,33,23,0.8) 0%, rgba(0,33,23,0.6) 35%, rgba(0,33,23,0.3) 65%, rgba(0,33,23,0) 100%);
       pointer-events: none;
     }
   }
@@ -78,33 +80,52 @@
     z-index: 10;
     display: flex;
     width: 100%;
-    max-width: 524px;
+    max-width: 680px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 48px;
+    gap: 32px;
     text-align: left;
   }
 
+  @media (min-width: 640px) {
+    .hero__content {
+      gap: 40px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero__content {
+      gap: 48px;
+    }
+  }
+
   .hero__lockup {
-    height: 72px;
+    height: 64px;
     width: auto;
     max-width: 100%;
   }
 
   @media (min-width: 640px) {
     .hero__lockup {
+      height: 80px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero__lockup {
       height: 96px;
     }
   }
 
   .hero__paragraph {
-    max-width: 524px;
+    max-width: 680px;
     font-family: 'Produkt', serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.72);
+    line-height: 28px;
+    letter-spacing: normal;
+    color: #B8B8B8;
     text-align: left;
     margin: 0;
   }
@@ -163,7 +184,7 @@
 
     <!-- Paragraph -->
     <p class="hero__paragraph">
-      A direct investment platform putting growth equity into consumer, technology, and operating businesses. Deals come through the family's operating network and counterparty relationships built over years, and that same network feeds BX Capital and BX Realty.
+      BX Equity is the private equity and venture capital arm of BX Group, deploying capital into early- and growth-stage companies across prop tech, fintech, intellectual property, and traditional private equity sectors\xe2\x80\x94areas where the firm brings strategic insight. With a disciplined investment approach, BX Equity seeks high-growth opportunities with strong fundamentals, scalable business models, and experienced, resilient founders. Beyond capital, the firm provides strategic and operational support, partnering with businesses to accelerate growth and unlock long-term value.
     </p>
 
   </div>
